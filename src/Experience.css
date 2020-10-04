@@ -1,0 +1,26 @@
+.experience {
+  height: 100vh;
+  margin: 50px auto;
+  width: 95%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.experience__cards {
+  display: flex;
+  flex-direction: column;
+}
+.experience__workFloat {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 70px;
+  color: #e74c3c;
+  opacity: 0.3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

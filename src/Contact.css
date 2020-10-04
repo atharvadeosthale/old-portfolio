@@ -1,0 +1,41 @@
+.contact {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f4f4;
+  margin-top: 60px;
+}
+.contact__box {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+.input {
+  margin-top: 20px;
+
+  padding: 20px 30px;
+  border-radius: 5px;
+  border: 1px solid black;
+  font-family: "Roboto";
+}
+
+.contact__box > button {
+  margin-top: 20px;
+  border: none;
+  padding: 20px 30px;
+  text-transform: uppercase;
+  background-color: #1abc9c;
+  font-size: 20px;
+  border-radius: 10px;
+  transition: all 200ms ease;
+}
+.contact__box > button:hover {
+  background-color: #117964;
+}
+.contact__box > button:focus {
+  outline: none;
+}

@@ -1,0 +1,43 @@
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+.about__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.about__image {
+  z-index: 100;
+}
+.about__image > img {
+  border-radius: 5px;
+  height: 200px;
+  width: 300px;
+}
+.about__description {
+  width: 35%;
+  margin-left: -90px;
+  padding: 30px 120px;
+  background-color: #34495e;
+  color: white;
+  font-size: 20px;
+}
+.about__description > h1 {
+  margin-bottom: 20px;
+}
+.about__social {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.about__social i {
+  margin-right: 20px;
+}
+.about__social a {
+  color: white;
+}

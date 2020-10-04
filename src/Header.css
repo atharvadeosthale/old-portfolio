@@ -1,0 +1,70 @@
+.header {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url(./img/header_bg.jpg);
+  background-size: cover;
+}
+#logo {
+  animation: fill 1s ease forwards 3s;
+  height: 70px;
+  width: auto;
+}
+#logo2 {
+  /*animation: fill 1s ease forwards 3s;*/
+  margin-left: 30px;
+  height: 70px;
+  width: auto;
+}
+#logo2 path {
+  stroke-dasharray: 0;
+  animation: doit 5s ease forwards 200ms;
+}
+#logo path {
+  stroke-dasharray: 0;
+  animation: doit 5s ease forwards 200ms;
+}
+.header__description {
+  margin-top: 50px;
+  font-size: 30px;
+  opacity: 0;
+  animation: fade 150ms ease forwards 3s;
+}
+
+@keyframes doit {
+  from {
+    stroke-dasharray: 0;
+    stroke-dashoffset: 450;
+  }
+  to {
+    stroke-dasharray: 720;
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: black;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    pointer-events: none;
+  }
+  to {
+    opacity: 1;
+    pointer-events: all;
+  }
+}
