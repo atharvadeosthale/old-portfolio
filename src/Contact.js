@@ -15,7 +15,7 @@ function Contact() {
       if (!email || !subject || !message) {
         return toast.error("All fields are required");
       }
-      const res = axios.post(
+      const res = await axios.post(
         "https://beta.atharvadeosthale.com/mailer.php",
         queryString.stringify({ email, subject, message })
       );
@@ -27,7 +27,7 @@ function Contact() {
   };
 
   return (
-    <div className="contact">
+    <div className="contact" id="contact">
       <h1>Contact Me</h1>
 
       <form onSubmit={sendMail} className="contact__box">

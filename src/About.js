@@ -3,7 +3,7 @@ import "./About.css";
 
 function About() {
   return (
-    <div className="about">
+    <div className="about" id="about">
       <div className="about__container">
         <div className="about__image" data-aos="fade-right">
           <img

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-scroll";
 import "./Navbar.css";
 
 function Navbar() {
@@ -21,10 +22,31 @@ function Navbar() {
         />
       </div>
       <ul className="navbar__linksContainer">
-        <li>Link 1</li>
-        <li>Link 2</li>
-        <li>Link 3</li>
-        <li>Link 4</li>
+        <li>
+          <Link to="home" smooth>
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link to="about" smooth>
+            About Me
+          </Link>
+        </li>
+        <li>
+          <Link to="projects" smooth>
+            Projects
+          </Link>
+        </li>
+        <li>
+          <Link to="experience" smooth>
+            Experience
+          </Link>
+        </li>
+        <li>
+          <Link to="contact" smooth>
+            Contact
+          </Link>
+        </li>
       </ul>
     </div>
   );

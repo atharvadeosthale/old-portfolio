@@ -4,7 +4,7 @@ import ExperienceCard from "./ExperienceCard";
 
 function Experience() {
   return (
-    <div className="experience">
+    <div className="experience" id="experience">
       <div className="experience__workFloat">
         <p>W</p>
         <p>O</p>

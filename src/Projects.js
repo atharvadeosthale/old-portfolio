@@ -12,7 +12,7 @@ function Projects() {
   };
 
   return (
-    <div className="projects">
+    <div className="projects" id="projects">
       <div className="projects__row">
         <div
           className="projects__project"
